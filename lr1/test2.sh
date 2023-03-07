@@ -10,7 +10,7 @@ while true
 do
 	echo "Введите имя файла:"
 	read filename
-	if [ $filename ] 
+	if [ -e $filename ] 
 		then
 			echo ""
 			echo "Время последнего доступа: "; stat -c %x $filename
